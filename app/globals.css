@@ -1,26 +1,373 @@
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   DESIGN SYSTEM — Pro Max (UI/UX Skill)
+   Palette: CRM & Analytics Dashboard  
+   Typography: Plus Jakarta Sans + Space Grotesk
+   ============================================ */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand - EdTech Navy */
+  --primary: #1e3a8a; /* blue-900 */
+  --primary-hover: #1e40af; /* blue-800 */
+  --primary-light: #eff6ff; /* blue-50 */
+  --primary-foreground: #ffffff;
+  
+  /* Surfaces (Highly Accessible Light Gray) */
+  --background: #f8fafc; /* slate-50 */
+  --foreground: #0f172a; /* slate-900 */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --card-border: #e2e8f0; /* slate-200 */
+  
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #64748b; /* slate-500 */
+  --sidebar-border: #e2e8f0;
+  --sidebar-active: #1e3a8a;
+  --sidebar-active-bg: #eff6ff;
+  
+  /* Secondary */
+  --muted: #f1f5f9; /* slate-100 */
+  --muted-foreground: #64748b;
+  --accent: #f8fafc;
+  --accent-light: #f1f5f9;
+  --accent-foreground: #0f172a;
+  
+  /* Semantic */
+  --destructive: #dc2626; /* red-600 */
+  --destructive-light: #fef2f2;
+  --warning: #d97706; /* amber-600 */
+  --warning-light: #fffbeb;
+  --info: #0284c7; /* lightblue/sky-600 */
+  --info-light: #f0f9ff;
+  --success: #16a34a; /* green-600 */
+  
+  /* Borders & Rings */
+  --border: #e2e8f0;
+  --ring: #1e40af; /* blue-800 */
+  --input-border: #cbd5e1; /* slate-300 */
+  
+  /* Radius - Shadcn standard */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  
+  /* Flat, Clean Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   DARK THEME
+   Palette: Premium Deep Purple (UI/UX God Mode)
+   ============================================ */
+.dark {
+  /* Vibrant Premium Purple/Fuchsia branding */
+  --primary: #d946ef; /* fuchsia-500 */
+  --primary-hover: #e879f9; /* fuchsia-400 */
+  --primary-light: #4a044e; /* fuchsia-900 */
+  --primary-foreground: #ffffff;
+  
+  /* Deep Rich Purple Surfaces */
+  --background: #1a0b2e; /* Very deep purple */
+  --foreground: #fdf4ff; /* fuchsia-50 */
+  --card: #281447; /* Slate purple for cards */
+  --card-foreground: #fdf4ff;
+  --card-border: #442678; /* subtle purplish border */
+  
+  /* Sidebar */
+  --sidebar: #130725; /* darker than bg */
+  --sidebar-foreground: #d8b4fe; /* purple-300 */
+  --sidebar-border: #3b1f66;
+  --sidebar-active: #d946ef; 
+  --sidebar-active-bg: rgba(217, 70, 239, 0.15);
+  
+  /* Secondary / Muted */
+  --muted: #32195f;
+  --muted-foreground: #c084fc; /* purple-400 */
+  --accent: #4c2889;
+  --accent-light: #281447;
+  --accent-foreground: #fdf4ff;
+  
+  --destructive: #ef4444; /* red-500 */
+  --destructive-light: #450a0a;
+  --warning: #f59e0b;
+  --warning-light: #422006;
+  --info: #a855f7; /* swap sky to purple info */
+  --info-light: #3b0764;
+  --success: #22c55e;
+  
+  --border: #442678;
+  --ring: #d946ef;
+  --input-border: #4c2889;
+  
+  /* Crisper Dark Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-border: var(--card-border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-sidebar-active-bg: var(--sidebar-active-bg);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-light: var(--destructive-light);
+  --color-warning: var(--warning);
+  --color-warning-light: var(--warning-light);
+  --color-info: var(--info);
+  --color-info-light: var(--info-light);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-input-border: var(--input-border);
+  --color-success: var(--success);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ============================================
+   BASE STYLES
+   ============================================ */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Pure Geometric sans-serif for trustworthy headers */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 { letter-spacing: -0.04em; font-weight: 700; }
+h2 { letter-spacing: -0.03em; }
+
+/* Global A11y Focus Styles */
+*:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+  transition: outline-offset 0.1s ease-in-out, outline-color 0.1s ease-in-out;
+}
+
+/* ============================================
+   SMOOTH THEME TRANSITIONS
+   Uses cubic-bezier for buttery smooth feel
+   ============================================ */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, box-shadow, opacity, transform;
+  transition-duration: 0.35s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Body gets a longer, softer transition for the full-page theme swap */
+body {
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Sidebar slides in color */
+aside {
+  transition: background-color 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset transitions for animations to prevent interference */
+.animate-spin, .animate-ping, .animate-pulse,
+[class*="animate-"] {
+  transition: none !important;
+}
+
+/* Interactive elements get snappier hover response */
+button, a, select, input, textarea {
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Structural hover for cards */
+.bg-card {
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.bg-card:hover, .hover\:bg-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border);
+}
+
+.dark .bg-card:hover, .dark .hover\:bg-card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+.dark button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  filter: brightness(0.9);
+}
+
+/* ============================================
+   MODAL BACKDROP ANIMATION
+   ============================================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up-fade {
+  animation: slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes auraPulse {
+  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.8; }
+  33% { transform: scale(1.1) translate(3%, 3%); opacity: 1; }
+  66% { transform: scale(0.95) translate(-2%, -2%); opacity: 0.7; }
+}
+
+.animate-aura {
+  animation: auraPulse 12s ease-in-out infinite alternate;
+}
+
+.fixed.inset-0 {
+  animation: fadeIn 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fixed.inset-0 > div {
+  animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* ============================================
+   FOCUS RING UTILITY
+   ============================================ */
+.focus-ring {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
+}
+
+/* ============================================
+   SELECTION STYLE
+   ============================================ */
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* ============================================
+   HIDE NEXT.JS DEV INDICATORS
+   ============================================ */
+nextjs-portal,
+#__next-build-watcher,
+#next-route-announcer {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* ============================================
+   AURA TEXTURES AND GRADIENTS
+   ============================================ */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+.dark .bg-noise {
+  opacity: 0.07;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: saturate(180%) blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease-out;
+}
+
+.dark .glass-panel {
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar Hide */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Base Body settings to fix overscroll */
+body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overscroll-behavior-y: none;
+  @apply transition-colors duration-500;
 }

@@ -1,0 +1,380 @@
+[
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 1,
+    "class": "9 «А»",
+    "subject": "Английский язык",
+    "teacher": "Смирнова А.В.",
+    "room": "Лингафонный 1",
+    "is_lenta": true
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 1,
+    "class": "9 «Б»",
+    "subject": "Английский язык",
+    "teacher": "Оспанов К.Т.",
+    "room": "Лингафонный 2",
+    "is_lenta": true
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 2,
+    "class": "9 «А»",
+    "subject": "Английский язык",
+    "teacher": "Смирнова А.В.",
+    "room": "Лингафонный 1",
+    "is_lenta": true
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 2,
+    "class": "9 «Б»",
+    "subject": "Английский язык",
+    "teacher": "Оспанов К.Т.",
+    "room": "Лингафонный 2",
+    "is_lenta": true
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 3,
+    "class": "9 «А»",
+    "subject": "Английский язык",
+    "teacher": "Смирнова А.В.",
+    "room": "Лингафонный 1",
+    "is_lenta": true
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 3,
+    "class": "9 «Б»",
+    "subject": "Английский язык",
+    "teacher": "Оспанов К.Т.",
+    "room": "Лингафонный 2",
+    "is_lenta": true
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 4,
+    "class": "9 «А»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 5,
+    "class": "9 «А»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 6,
+    "class": "9 «А»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 7,
+    "class": "9 «А»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 8,
+    "class": "9 «А»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 1,
+    "class": "9 «А»",
+    "subject": "Химия",
+    "teacher": "Пак В.Н.",
+    "room": "Лаборатория Химии",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 2,
+    "class": "9 «А»",
+    "subject": "Химия",
+    "teacher": "Пак В.Н.",
+    "room": "Лаборатория Химии",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 3,
+    "class": "9 «А»",
+    "subject": "Физкультура",
+    "teacher": "Алиев М.М.",
+    "room": "Главный Спортзал",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 4,
+    "class": "9 «А»",
+    "subject": "Физкультура",
+    "teacher": "Алиев М.М.",
+    "room": "Главный Спортзал",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 1,
+    "class": "9 «Б»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 2,
+    "class": "9 «Б»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 3,
+    "class": "9 «Б»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 4,
+    "class": "9 «Б»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 5,
+    "class": "9 «Б»",
+    "subject": "Математика",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 4,
+    "class": "9 «Б»",
+    "subject": "Химия",
+    "teacher": "Пак В.Н.",
+    "room": "Лаборатория Химии",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 5,
+    "class": "9 «Б»",
+    "subject": "Химия",
+    "teacher": "Пак В.Н.",
+    "room": "Лаборатория Химии",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 6,
+    "class": "9 «Б»",
+    "subject": "Физкультура",
+    "teacher": "Алиев М.М.",
+    "room": "Главный Спортзал",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 7,
+    "class": "9 «Б»",
+    "subject": "Физкультура",
+    "teacher": "Алиев М.М.",
+    "room": "Главный Спортзал",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 3,
+    "class": "10 «А»",
+    "subject": "Алгебра",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 6,
+    "class": "10 «А»",
+    "subject": "Алгебра",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 7,
+    "class": "10 «А»",
+    "subject": "Алгебра",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 2,
+    "lesson": 8,
+    "class": "10 «А»",
+    "subject": "Алгебра",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 3,
+    "lesson": 1,
+    "class": "10 «А»",
+    "subject": "Геометрия",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 3,
+    "lesson": 2,
+    "class": "10 «А»",
+    "subject": "Геометрия",
+    "teacher": "Иванов И.И.",
+    "room": "Кабинет 101",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 4,
+    "class": "10 «А»",
+    "subject": "Английский язык",
+    "teacher": "Смирнова А.В.",
+    "room": "Кабинет 102",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 5,
+    "class": "10 «А»",
+    "subject": "Английский язык",
+    "teacher": "Смирнова А.В.",
+    "room": "Кабинет 102",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 6,
+    "class": "10 «А»",
+    "subject": "Английский язык",
+    "teacher": "Смирнова А.В.",
+    "room": "Кабинет 102",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 1,
+    "class": "10 «А»",
+    "subject": "Физкультура",
+    "teacher": "Алиев М.М.",
+    "room": "Главный Спортзал",
+    "is_lenta": false
+  },
+  {
+    "type": "lesson",
+    "day": 1,
+    "lesson": 2,
+    "class": "10 «А»",
+    "subject": "Физкультура",
+    "teacher": "Алиев М.М.",
+    "room": "Главный Спортзал",
+    "is_lenta": false
+  },
+  {
+    "type": "task",
+    "day": 1,
+    "lesson": 1,
+    "staff": "Ахметов Серик",
+    "task_desc": "Планерка у директора"
+  },
+  {
+    "type": "task",
+    "day": 5,
+    "lesson": 8,
+    "staff": "Ахметов Серик",
+    "task_desc": "Проверка счетчиков"
+  },
+  {
+    "type": "task",
+    "day": 1,
+    "lesson": 1,
+    "staff": "Директор",
+    "task_desc": "Планерка с завхозом"
+  },
+  {
+    "type": "task",
+    "day": 3,
+    "lesson": 3,
+    "staff": "Директор",
+    "task_desc": "Прием родителей"
+  }
+]

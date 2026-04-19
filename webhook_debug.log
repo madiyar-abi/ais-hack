@@ -1,0 +1,28 @@
+[Webhook DEBUG] Raw Sender: 77784985270 | Cleaned: 7784985270
+Fetched profiles: 1. DB Error: null
+Found Match! Name: Гореева Альфия Махмудовна(AIS)(до обеда)
+Result Name: Гореева Альфия Махмудовна(AIS)(до обеда)
+
+[Webhook DEBUG] Raw Sender: 173014335381710@lid | Cleaned: 4335381710
+Fetched profiles: 2. DB Error: null
+No Match Found.
+  DB Phone: +7 778 498 5270 -> cleaned DB: 7784985270
+  DB Phone: +7 7081181235 -> cleaned DB: 7081181235
+Result Name: Неизвестный
+
+[Webhook DEBUG] Raw Sender: 173014335381710@lid | Cleaned: 4335381710
+[Webhook PAYLOAD]: {"groupName":"AIS Administration","groupId":"120363433079394966@g.us","sender":"173014335381710@lid","text":"Я заболела , не смогу провести ближайший урок.","timestamp":1776490442}
+Fetched profiles: 2. DB Error: null
+No Match Found.
+  DB Phone: +7 778 498 5270 -> cleaned DB: 7784985270
+  DB Phone: +7 708 118 1235 -> cleaned DB: 7081181235
+Result Name: Неизвестный
+
+[Webhook DEBUG] Raw Sender: 173014335381710@lid | Cleaned: 4335381710
+[Webhook PAYLOAD]: {"groupName":"AIS Administration","groupId":"120363433079394966@g.us","sender":"173014335381710@lid","text":"Здравствуйте","timestamp":1776490495}
+Fetched profiles: 2. DB Error: null
+No Match Found.
+  DB Phone: +7 778 498 5270 -> cleaned DB: 7784985270
+  DB Phone: +7 708 118 1235 -> cleaned DB: 7081181235
+Result Name: Неизвестный
+

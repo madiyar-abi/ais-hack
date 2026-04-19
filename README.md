@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aqbobek International School — AI-Powered Internal Portal
 
-## Getting Started
+An advanced web application to optimize the workflow of a modern international school. Built with Next.js, TailwindCSS, Supabase, and Gemini API.
 
-First, run the development server:
+## 🚀 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **Intelligent Schedule Engine (Ribbons Algorithm):** A robust algorithm that handles advanced multi-parallel constraints to automatically balance school schedules evenly throughout the week.
+*   **AI Voice Assistant:** Integrates Gemini's STT (Speech-To-Text) and intelligence to let administrators dictate ad-hoc duties. The assistant understands the context, breaks the prompt into tasks, checks available staff in the database, and automatically issues assignments.
+*   **Bureaucratic RAG Secretary:** An AI-powered knowledge base companion that translates informal requests into standard official school documents (e.g., mandates, statements, warnings) with Word document generation (`.doc` export) strictly formatted using GOST standards.
+*   **Role-Based Dashboards:** Distinct environments based on user roles (Director, Teacher, Head Teacher, etc.), featuring robust Supabase-backed authentication.
+*   **Teacher Replacements & Analytics:** Automatic recommendations for cover/substitute teachers and real-time incident report tracking.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Frontend Framework:** [Next.js](https://nextjs.org/)
+*   **Styling & UI:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Backend & Auth:** [Supabase](https://supabase.com/) (PostgreSQL + built-in authentication and real-time database functions)
+*   **AI Engine:** [Google Gemini API](https://ai.google.dev/) (Flash models for text generation, speech analysis, and reasoning)
+*   **Icons & Components:** Custom built "glassmorphic" interface optimized for accessibility.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Setup & Installation
 
-## Learn More
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/madiyar-abi/ais-hack.git
+    cd ais-hack
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Configure Environment Variables:**
+    Create a `.env.local` file and structure it internally with the following:
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+    GEMINI_API_KEY=your_gemini_api_key
+    ```
+    
+4.  **Run Development Server:**
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔒 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proprietary — Aqbobek International School.
