@@ -10,12 +10,15 @@ An advanced web application to optimize the workflow of a modern international s
 *   **Role-Based Dashboards:** Distinct environments based on user roles (Director, Teacher, Head Teacher, etc.), featuring robust Supabase-backed authentication.
 *   **Teacher Replacements & Analytics:** Automatic recommendations for cover/substitute teachers and real-time incident report tracking.
 
+*   **WhatsApp Integration:** Uses `whatsapp-web.js` for real-time two-way communication. The system catches messages from users and dispatches automated notifications to groups and individuals directly from the platform.
+
 ## 🛠️ Technology Stack
 
 *   **Frontend Framework:** [Next.js](https://nextjs.org/)
 *   **Styling & UI:** [Tailwind CSS](https://tailwindcss.com/)
 *   **Backend & Auth:** [Supabase](https://supabase.com/) (PostgreSQL + built-in authentication and real-time database functions)
 *   **AI Engine:** [Google Gemini API](https://ai.google.dev/) (Flash models for text generation, speech analysis, and reasoning)
+*   **Messaging API:** `whatsapp-web.js` (for headless WhatsApp client integration)
 *   **Icons & Components:** Custom built "glassmorphic" interface optimized for accessibility.
 
 ## ⚙️ Setup & Installation
