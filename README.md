@@ -4,7 +4,7 @@
 
 *   **Madiyar Rat** - [GitHub](https://github.com/madiyar-abi)
 *   **Ali Mukhtubayev** - [GitHub](https://github.com/xan1ameba)
-*   **Anuar Tanirbergenov**
+*   **Anuar Tanirbergenov** - [GitHub](https://github.com/amangeeldin)
 
 Developed for **AIS HACK 3.0**, the National AI Hackathon, where the project placed **6th among 180+ teams**.
 
