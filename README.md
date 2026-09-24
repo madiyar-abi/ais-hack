@@ -1,5 +1,13 @@
 # Aqbobek International School — AI-Powered Internal Portal
 
+## 👥 Authors
+
+*   **Madiyar Rat** - [GitHub](https://github.com/madiyar-abi)
+*   **Ali Mukhtubayev** - [GitHub](https://github.com/xan1ameba)
+*   **Anuar Tanirbergenov**
+
+Developed for **AIS HACK 3.0**, the National AI Hackathon, where the project placed **6th among 180+ teams**.
+
 An advanced web application to optimize the workflow of a modern international school. Built with Next.js, TailwindCSS, Supabase, and Gemini API.
 
 ## 🚀 Key Features
